@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fisher"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.android.tools.fd.runtime.BootstrapApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name" >
+
+        <!--
+       <activity
+           android:name=".EdgeConfigure"
+           android:label="@string/app_name">
+           <intent-filter>
+               <action android:name="android.intent.action.MAIN"/>
+           </intent-filter>
+       </activity>
+
+
+       <activity
+           android:name=".immersive_mode.ImmersiveModeActivity"
+           android:label="@string/app_name"
+           android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+           <intent-filter>
+               <action android:name="android.intent.action.MAIN"/>
+
+          <category android:name="android.intent.category.LAUNCHER" />
+           </intent-filter>
+
+           <meta-data
+               android:name="com.samsung.android.cocktail.subwindow.enable"
+               android:value="true"/>
+       </activity>
+
+         <receiver android:name=".single.CocktailSingleProvider">
+            <intent-filter>
+                <action android:name="com.samsung.android.cocktail.v2.action.COCKTAIL_UPDATE"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="com.samsung.android.cocktail.provider"
+                android:resource="@xml/edge_single"/>
+        </receiver>
+
+        <receiver android:name=".list.CocktailListAdapterProvider">
+            <intent-filter>
+                <action android:name="com.samsung.android.cocktail.v2.action.COCKTAIL_UPDATE"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="com.samsung.android.cocktail.provider"
+                android:resource="@xml/edge_single_list"/>
+        </receiver>
+<receiver android:name="com.example.edgescreen.feeds.CocktailFeedsProvider">
+            <intent-filter>
+                <action android:name="com.samsung.android.cocktail.action.COCKTAIL_UPDATE"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="com.samsung.android.cocktail.provider"
+                android:resource="@xml/edge_feeds"/>
+        </receiver>
+        -->
+
+
+        <!-- 息屏提醒 start -->
+
+        <receiver android:name="com.fisher.provider.RouteInfoFeedProvider" >
+            <intent-filter>
+                <action android:name="com.samsung.android.cocktail.action.COCKTAIL_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.samsung.android.cocktail.provider"
+                android:resource="@xml/feed_track" />
+        </receiver>
+
+        <!-- 息屏提醒 end -->
+
+        <receiver android:name="com.fisher.provider.RouteInfoProvider" >
+            <intent-filter>
+                <action android:name="com.samsung.android.cocktail.v2.action.COCKTAIL_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.samsung.android.cocktail.provider"
+                android:resource="@xml/edge_track" />
+        </receiver>
+
+        <service
+            android:name="com.fisher.extra.RouteInfoAdapterService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <!--
+        <service
+            android:name=".list.CocktailListAdapterService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        -->
+
+        <meta-data
+            android:name="com.samsung.android.cocktail.mode"
+            android:value="edge_single_plus" />
+
+        <activity
+            android:name="com.fisher.activity.ConfigureActivity"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>

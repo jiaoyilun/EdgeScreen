@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\workspace_studio\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\xml\\feed_track.xml",
+        "source": "D:\\workspace_studio\\EdgeScreen\\app\\src\\main\\res\\xml\\feed_track.xml"
+    },
+    {
+        "merged": "D:\\workspace_studio\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\xml\\edge_track.xml",
+        "source": "D:\\workspace_studio\\EdgeScreen\\app\\src\\main\\res\\xml\\edge_track.xml"
+    }
+]

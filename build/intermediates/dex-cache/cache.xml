@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\workspace_studio\EdgeScreen\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="D:\workspace_studio\EdgeScreen\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_99c466cac9da74ae251689c53232a3f5e47403b9\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="D:\workspace_studio\EdgeScreen\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_7cd194c6f3f4f301c835750b93d55cdb37d12acf\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\studio\gradle\m2repository\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="D:\workspace_studio\EdgeScreen\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.2.4_43db379c41fb5087c66af9739c449e7d20bae6fd\classes.dex" />
+    </item>
+    <item
+        jar="D:\workspace_studio\EdgeScreen\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="D:\workspace_studio\EdgeScreen\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_0f5cff8407e30a150448ee8b3467f7439086565b\classes.dex" />
+    </item>
+    <item
+        jar="D:\workspace_studio\EdgeScreen\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="18f9b86b70d4a52174d9a5ae3855b535a57b7349">
+        <dex dex="D:\workspace_studio\EdgeScreen\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_b1778c6018359b11575b492a10ac5d95364eef37\classes.dex" />
+    </item>
+    <item
+        jar="D:\workspace_studio\EdgeScreen\app\libs\sdk-v1.0.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e2ce3786b6e9519934c4a54aaaaf39525bf4486c">
+        <dex dex="D:\workspace_studio\EdgeScreen\app\build\intermediates\transforms\dex\debug\folders\1000\2\sdk-v1.0.0_871bbeeb4df1d8721423e74b2435493e6e241832\classes.dex" />
+    </item>
+    <item
+        jar="D:\workspace_studio\EdgeScreen\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ae12863a4e5b4abd8b5a1fbc0b04999136209c76">
+        <dex dex="D:\workspace_studio\EdgeScreen\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_1a386e8712841291038765ca015c1e283463909f\classes.dex" />
+    </item>
+    <item
+        jar="D:\workspace_studio\EdgeScreen\app\libs\look_v1.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a833cc4f712338585f175f0ac1236d12e07e9ee1">
+        <dex dex="D:\workspace_studio\EdgeScreen\app\build\intermediates\transforms\dex\debug\folders\1000\2\look_v1.3.0_8cbac64bfbfa58a00cde2750aa740824c67202d5\classes.dex" />
+    </item>
+
+</items>
