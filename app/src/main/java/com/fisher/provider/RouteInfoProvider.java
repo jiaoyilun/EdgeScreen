@@ -14,6 +14,8 @@ import com.fisher.extra.RouteInfoAdapterService;
 import com.samsung.android.sdk.look.cocktailbar.SlookCocktailManager;
 import com.samsung.android.sdk.look.cocktailbar.SlookCocktailProvider;
 
+import java.text.SimpleDateFormat;
+
 /**
  * Created by Administrator on 2016/6/16/.
  */
@@ -47,7 +49,6 @@ public class RouteInfoProvider extends SlookCocktailProvider {
         views.setTextViewText(R.id.tv_nu, "3944490863");
         views.setTextViewText(R.id.tv_tel, "aaaa");
         views.setTextViewText(R.id.tv_url, "www.baidu.com");
-        //        views.setContentDescription(R.id.tv_test, "帮助内容吗");
 
 
         views.setRemoteAdapter(R.id.lv_routeInfoList, intent);
@@ -59,10 +60,33 @@ public class RouteInfoProvider extends SlookCocktailProvider {
         PendingIntent itemClickPendingIntent = PendingIntent.getBroadcast(context, 1, itemClickIntent, PendingIntent.FLAG_UPDATE_CURRENT);
         views.setPendingIntentTemplate(R.id.lv_routeInfoList, itemClickPendingIntent);
 
-        Log.d(TAG, cocktailIds.length + "");
 
+        //设置帮助区域视图
+        RemoteViews view_help = this.setHelpAreaView(context);
+
+        Log.d(TAG, cocktailIds.length + "");
         for (int i = 0; i < cocktailIds.length; i++) {
-            cocktailManager.updateCocktail(cocktailIds[i], views);
+            cocktailManager.updateCocktail(cocktailIds[i], views, view_help);
         }
+    }
+
+
+    private RemoteViews setHelpAreaView(Context context) {
+        String tx_update = String.format(context.getString(R.string.text_updated), getCurrentTime());
+        RemoteViews view_help = new RemoteViews(context.getPackageName(), R.layout.help_layout);
+        view_help.setTextViewText(R.id.tv_update, tx_update);
+
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.URL_POWERED));
+
+        PendingIntent logoClickPendingIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        view_help.setOnClickPendingIntent(R.id.iv_logo, logoClickPendingIntent);
+
+        return view_help;
+    }
+
+    private String getCurrentTime() {
+        SimpleDateFormat sDateFormat = new SimpleDateFormat("MM/dd hh:mm");
+        String time = sDateFormat.format(new java.util.Date());
+        return time;
     }
 }

@@ -11,8 +11,11 @@
     <dimen name="panel_horizonal_margin">20dp</dimen>
     <dimen name="text_margin">16dp</dimen>
     <string name="app_name">快递追踪</string>
+    <string name="btn_refresh">刷新</string>
     <string name="desc_track">追踪最新物流信息</string>
     <string name="text_no_data">暂无数据</string>
+    <string name="text_support">数据来源</string>
+    <string name="text_updated">已更新 %s</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
             Theme customizations available in newer API levels can go in
@@ -22,5 +25,19 @@
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="style_help_area">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fafafa</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowDy">+3</item>
+        <item name="android:shadowRadius">0.3</item>
+        <!--
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:fontFamily">Roboto-Regular</item>
+        -->
+
     </style>
 </resources>

@@ -4,4 +4,7 @@
     <string name="app_name">快递追踪</string>
     <string name="desc_track">追踪最新物流信息</string>
     <string name="text_no_data">暂无数据</string>
+    <string name="text_updated">已更新 %s</string>
+    <string name="text_support">数据来源</string>
+    <string name="btn_refresh">刷新</string>
 </resources>

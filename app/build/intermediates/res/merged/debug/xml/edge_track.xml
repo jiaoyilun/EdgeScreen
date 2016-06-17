@@ -4,6 +4,5 @@
                    configure="com.fisher.activity.ConfigureActivity"
                    description="@string/desc_track"
                    label="@string/app_name"
-                   previewImage="@drawable/plus_preview"
-                   updatePeriodMills="1800000">
+                   previewImage="@drawable/plus_preview">
 </cocktail-provider>
