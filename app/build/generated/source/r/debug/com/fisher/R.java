@@ -28,12 +28,12 @@ public final class R {
         public static final int plus_preview=0x7f020002;
     }
     public static final class id {
-        public static final int emptylist=0x7f080006;
         public static final int lv_routeInfoList=0x7f080005;
         public static final int text=0x7f080000;
         public static final int track_plus_item_layout=0x7f080007;
         public static final int tv_com=0x7f080001;
         public static final int tv_context=0x7f080009;
+        public static final int tv_emptylist=0x7f080006;
         public static final int tv_nu=0x7f080002;
         public static final int tv_tel=0x7f080003;
         public static final int tv_time=0x7f080008;
@@ -48,6 +48,7 @@ public final class R {
     public static final class string {
         public static final int app_name=0x7f070000;
         public static final int desc_track=0x7f070001;
+        public static final int text_no_data=0x7f070002;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 

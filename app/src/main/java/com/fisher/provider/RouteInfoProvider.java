@@ -51,7 +51,7 @@ public class RouteInfoProvider extends SlookCocktailProvider {
 
 
         views.setRemoteAdapter(R.id.lv_routeInfoList, intent);
-        views.setEmptyView(R.id.lv_routeInfoList, R.id.emptylist);
+        views.setEmptyView(R.id.lv_routeInfoList, R.id.tv_emptylist);
 
         Intent itemClickIntent = new Intent(context, RouteInfoProvider.class);
         itemClickIntent.setAction(Constants.COCKTAIL_LIST_ADAPTER_CLICK_ACTION);

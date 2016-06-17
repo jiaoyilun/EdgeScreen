@@ -12,6 +12,7 @@
     <dimen name="text_margin">16dp</dimen>
     <string name="app_name">快递追踪</string>
     <string name="desc_track">追踪最新物流信息</string>
+    <string name="text_no_data">暂无数据</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
             Theme customizations available in newer API levels can go in

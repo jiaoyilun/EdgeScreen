@@ -53,10 +53,11 @@
         android:scrollbars="none"/>
 
     <TextView
-        android:id="@+id/emptylist"
+        android:id="@+id/tv_emptylist"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:textColor="#FFFFFF"/>
+        android:textColor="#FFFFFF"
+        android:text="@string/text_no_data"/>
 
 </LinearLayout>

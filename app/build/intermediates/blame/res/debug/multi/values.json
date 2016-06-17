@@ -235,9 +235,28 @@
                     "startLine": 14,
                     "startColumn": 4,
                     "startOffset": 661,
-                    "endLine": 20,
+                    "endColumn": 45,
+                    "endOffset": 702
+                },
+                "from": {
+                    "file": "D:\\workspace_studio\\EdgeScreen\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 146,
+                        "endColumn": 45,
+                        "endOffset": 187
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 707,
+                    "endLine": 21,
                     "endColumn": 12,
-                    "endOffset": 947
+                    "endOffset": 993
                 },
                 "from": {
                     "file": "D:\\workspace_studio\\EdgeScreen\\app\\src\\main\\res\\values\\styles.xml",
@@ -253,12 +272,12 @@
             },
             {
                 "to": {
-                    "startLine": 21,
+                    "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 952,
-                    "endLine": 23,
+                    "startOffset": 998,
+                    "endLine": 24,
                     "endColumn": 12,
-                    "endOffset": 1107
+                    "endOffset": 1153
                 },
                 "from": {
                     "file": "D:\\workspace_studio\\EdgeScreen\\app\\src\\main\\res\\values\\styles.xml",

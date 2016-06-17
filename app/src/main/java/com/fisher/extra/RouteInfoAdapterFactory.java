@@ -35,12 +35,12 @@ public class RouteInfoAdapterFactory implements RemoteViewsService.RemoteViewsFa
 
     @Override
     public void onCreate() {
+        loadData();
     }
 
     @Override
     public void onDataSetChanged() {
         Log.d(TAG, "onDataSetChanged");
-        loadData();
         notifyReady();
     }
 
@@ -94,7 +94,6 @@ public class RouteInfoAdapterFactory implements RemoteViewsService.RemoteViewsFa
     private void loadData() {
         TrackData data = NetUtil.getTestData();
         routeInfoList = data.getData();
-        //        notifyReady();
     }
 
     @Override
