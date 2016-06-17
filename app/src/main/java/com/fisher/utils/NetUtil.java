@@ -2,7 +2,6 @@ package com.fisher.utils;
 
 import android.util.Log;
 
-import com.fisher.common.Constants;
 import com.fisher.po.TrackData;
 import com.google.gson.Gson;
 

@@ -10,7 +10,7 @@ import android.widget.RemoteViews;
 import android.widget.Toast;
 
 import com.fisher.R;
-import com.fisher.common.Constants;
+import com.fisher.utils.Constants;
 import com.fisher.extra.RouteInfoAdapterService;
 import com.samsung.android.sdk.look.cocktailbar.SlookCocktailManager;
 import com.samsung.android.sdk.look.cocktailbar.SlookCocktailProvider;

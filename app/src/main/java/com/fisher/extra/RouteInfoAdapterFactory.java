@@ -13,6 +13,7 @@ import com.fisher.provider.RouteInfoProvider;
 import com.fisher.utils.NetUtil;
 import com.samsung.android.sdk.look.cocktailbar.SlookCocktailManager;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -23,7 +24,7 @@ public class RouteInfoAdapterFactory implements RemoteViewsService.RemoteViewsFa
 
     private Context context;
 
-    private List<RouteInfo> routeInfoList;
+    private List<RouteInfo> routeInfoList = new ArrayList<>();
 
     public RouteInfoAdapterFactory(Context context) {
         this.context = context;
@@ -31,13 +32,15 @@ public class RouteInfoAdapterFactory implements RemoteViewsService.RemoteViewsFa
 
     @Override
     public void onCreate() {
-        loadData();
+//        loadLocalData();
+        loadRemoteData();
     }
 
     @Override
     public void onDataSetChanged() {
+        Log.d(TAG,"load?  "+ routeInfoList.size());
         Log.d(TAG, "onDataSetChanged");
-        //        notifyReady();
+//                notifyReady();
     }
 
     @Override
@@ -46,11 +49,14 @@ public class RouteInfoAdapterFactory implements RemoteViewsService.RemoteViewsFa
 
     @Override
     public int getCount() {
-        return (null == routeInfoList || routeInfoList.isEmpty()) ? 0 : routeInfoList.size();
+        return (routeInfoList.isEmpty()) ? 0 : routeInfoList.size();
     }
 
     @Override
     public RemoteViews getViewAt(int position) {
+        Log.d(TAG,"load?  "+ routeInfoList.size());
+        Log.d(TAG, "getViewAt....");
+
         RemoteViews contentView = new RemoteViews(context.getPackageName(), R.layout.track_plus_item);
       /*   Bundle extras = new Bundle();
         Intent fillInIntent = new Intent();
@@ -87,9 +93,19 @@ public class RouteInfoAdapterFactory implements RemoteViewsService.RemoteViewsFa
         }
     }
 
-    private void loadData() {
+    private void loadLocalData() {
         TrackData data = NetUtil.getTestData();
         routeInfoList = data.getData();
+    }
+
+    private void loadRemoteData(){
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                TrackData data = NetUtil.loadRouteInfo("zhaijisong","3944490863");
+                routeInfoList = data.getData();
+            }
+        }).start();
     }
 
     @Override
