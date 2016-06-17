@@ -2,60 +2,11 @@
 <items version="2" >
 
     <item
-        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
-        <dex dex="D:\workspace_studio\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_7cd194c6f3f4f301c835750b93d55cdb37d12acf\classes.dex" />
-    </item>
-    <item
-        jar="D:\workspace_studio\ExpressTrack\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="085d0ded50e01bdbb97b2f255f6a5303042a436a">
-        <dex dex="D:\workspace_studio\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_4433792b54addc933a97306c417f0557876e2ab7\classes.dex" />
-    </item>
-    <item
-        jar="D:\Android\studio\gradle\m2repository\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="a60a5e993c98c864010053cb901b7eab25306568">
-        <dex dex="D:\workspace_studio\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.2.4_43db379c41fb5087c66af9739c449e7d20bae6fd\classes.dex" />
-    </item>
-    <item
-        jar="D:\workspace_studio\ExpressTrack\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
-        <dex dex="D:\workspace_studio\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_ba97d689004273258d153072b2a61ead0d305151\classes.dex" />
-    </item>
-    <item
         jar="D:\workspace_studio\ExpressTrack\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="7b0e3eb15e2275219fb88677ac5f9aa6bb4fd709">
+        sha1="35047cf125498d045be9d9dacdb008ec71b89718">
         <dex dex="D:\workspace_studio\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_320d9003dba13b5f39a2c668a7639f0d15f18f8d\classes.dex" />
-    </item>
-    <item
-        jar="D:\workspace_studio\ExpressTrack\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
-        <dex dex="D:\workspace_studio\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_00373e949badd7382d6b1f5a083519e40a5085a1\classes.dex" />
-    </item>
-    <item
-        jar="D:\workspace_studio\ExpressTrack\app\libs\sdk-v1.0.0.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="e2ce3786b6e9519934c4a54aaaaf39525bf4486c">
-        <dex dex="D:\workspace_studio\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\2\sdk-v1.0.0_62631c52e1ef5155629db4821cbb850fd3b80277\classes.dex" />
-    </item>
-    <item
-        jar="D:\workspace_studio\ExpressTrack\app\libs\look_v1.3.0.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="a833cc4f712338585f175f0ac1236d12e07e9ee1">
-        <dex dex="D:\workspace_studio\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\2\look_v1.3.0_9bd354a437dca99ff2e167aeec23e523f7a45cb0\classes.dex" />
     </item>
 
 </items>
