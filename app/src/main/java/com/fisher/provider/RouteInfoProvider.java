@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.util.Log;
 import android.view.View;
 import android.widget.RemoteViews;
+import android.widget.Toast;
 
 import com.fisher.R;
 import com.fisher.common.Constants;
@@ -24,6 +25,12 @@ public class RouteInfoProvider extends SlookCocktailProvider {
 
     @Override
     public void onReceive(Context context, Intent intent) {
+        Log.d(TAG, "onReceive");
+        Log.d(TAG,intent.getAction());
+        if (intent.getAction().equals(Constants.ACTION_CLICK_REFRESH)) {
+            Log.d(TAG, "ACTION_CLICK_REFRESH");
+            Toast.makeText(context, "加载中...", Toast.LENGTH_SHORT).show();
+        }
         super.onReceive(context, intent);
         //        if (intent.getAction() == Constants.COCKTAIL_LIST_ADAPTER_CLICK_ACTION) {
         //            PendingIntent p = intent.getParcelableExtra(Constants.EXTRA_CONTENT_INTENT);
@@ -79,6 +86,10 @@ public class RouteInfoProvider extends SlookCocktailProvider {
         Intent logoIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.URL_POWERED));
         PendingIntent logoClickPendingIntent = PendingIntent.getActivity(context, 0, logoIntent, PendingIntent.FLAG_UPDATE_CURRENT);
         view_help.setOnClickPendingIntent(R.id.iv_logo, logoClickPendingIntent);
+
+        Intent refreshIntent = new Intent().setAction(Constants.ACTION_CLICK_REFRESH);
+        PendingIntent refreshPendingIntent = PendingIntent.getBroadcast(context, 0, refreshIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        view_help.setOnClickPendingIntent(R.id.iv_refresh, refreshPendingIntent);
 
         return view_help;
     }

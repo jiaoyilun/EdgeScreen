@@ -1,16 +1,12 @@
 package com.fisher.extra;
 
-import android.app.PendingIntent;
 import android.content.ComponentName;
 import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
 import android.util.Log;
 import android.widget.RemoteViews;
 import android.widget.RemoteViewsService;
 
 import com.fisher.R;
-import com.fisher.common.Constants;
 import com.fisher.po.RouteInfo;
 import com.fisher.po.TrackData;
 import com.fisher.provider.RouteInfoProvider;
@@ -41,7 +37,7 @@ public class RouteInfoAdapterFactory implements RemoteViewsService.RemoteViewsFa
     @Override
     public void onDataSetChanged() {
         Log.d(TAG, "onDataSetChanged");
-//        notifyReady();
+        //        notifyReady();
     }
 
     @Override
@@ -56,9 +52,9 @@ public class RouteInfoAdapterFactory implements RemoteViewsService.RemoteViewsFa
     @Override
     public RemoteViews getViewAt(int position) {
         RemoteViews contentView = new RemoteViews(context.getPackageName(), R.layout.track_plus_item);
-        Bundle extras = new Bundle();
+      /*   Bundle extras = new Bundle();
         Intent fillInIntent = new Intent();
-        if ((position % 2) == 0) {
+       if ((position % 2) == 0) {
             PendingIntent pIntent = PendingIntent.getActivity(context, 0, new Intent(Intent.ACTION_DIAL), PendingIntent.FLAG_UPDATE_CURRENT);
             extras.putParcelable(Constants.EXTRA_CONTENT_INTENT, pIntent);
             fillInIntent.putExtras(extras);
@@ -70,7 +66,7 @@ public class RouteInfoAdapterFactory implements RemoteViewsService.RemoteViewsFa
             extras.putParcelable(Constants.EXTRA_CONTENT_INTENT, pIntent);
             fillInIntent.putExtras(extras);
             contentView.setOnClickFillInIntent(R.id.track_plus_item_layout, fillInIntent);
-        }
+        }*/
         try {
             RouteInfo routeInfo = routeInfoList.get(position);
             contentView.setTextViewText(R.id.tv_context, routeInfo.getContext());
