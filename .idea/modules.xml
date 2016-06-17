@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/EdgeScreen.iml" filepath="$PROJECT_DIR$/EdgeScreen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExpressTrack.iml" filepath="$PROJECT_DIR$/ExpressTrack.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

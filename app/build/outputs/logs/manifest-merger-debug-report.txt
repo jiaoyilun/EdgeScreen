@@ -1,99 +1,99 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:2:1-61:12
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:2:1-61:12
 	xmlns:android
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:2:11-69
 	package
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:3:11-31
-		INJECTED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml
-		INJECTED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:3:11-31
+		INJECTED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:5:11-36
-		INJECTED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml
-		INJECTED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:5:11-36
+		INJECTED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml
 	android:versionCode
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:4:11-34
-		INJECTED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml
-		INJECTED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:4:11-34
+		INJECTED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml
 uses-sdk
-ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:7:5-9:40
-MERGED from [com.android.support:support-v4:23.3.0] D:\workspace_studio\EdgeScreen\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:7:5-9:40
+MERGED from [com.android.support:support-v4:23.3.0] D:\workspace_studio\ExpressTrack\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:9:9-38
-		INJECTED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml
-		INJECTED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:8:9-35
-		INJECTED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml
-		INJECTED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:8:9-35
+		INJECTED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml
 uses-permission#com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY
-ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:11:5-116
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:11:5-116
 	android:name
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:11:22-114
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:11:22-114
 uses-permission#android.permission.INTERNET
-ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:12:5-66
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:12:5-66
 	android:name
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:12:22-64
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:12:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:13:5-80
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:13:5-80
 	android:name
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:13:22-78
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:13:22-78
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:14:5-74
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:14:5-74
 	android:name
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:14:22-72
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:14:22-72
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:15:5-79
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:15:5-79
 	android:name
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:15:22-77
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:15:22-77
 application
-ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:17:5-59:19
-MERGED from [com.android.support:support-v4:23.3.0] D:\workspace_studio\EdgeScreen\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:17:5-59:19
+MERGED from [com.android.support:support-v4:23.3.0] D:\workspace_studio\ExpressTrack\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:19:9-41
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:19:9-41
 	android:allowBackup
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:18:9-35
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:18:9-35
 receiver#com.fisher.provider.RouteInfoFeedProvider
-ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:23:9-31:20
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:23:9-31:20
 	android:name
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:23:19-75
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:23:19-75
 intent-filter#com.samsung.android.cocktail.action.COCKTAIL_UPDATE
-ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:24:13-26:29
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:24:13-26:29
 action#com.samsung.android.cocktail.action.COCKTAIL_UPDATE
-ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:25:17-93
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:25:17-93
 	android:name
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:25:25-91
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:25:25-91
 meta-data#com.samsung.android.cocktail.provider
-ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:28:13-30:53
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:28:13-30:53
 	android:resource
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:30:17-51
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:30:17-51
 	android:name
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:29:17-69
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:29:17-69
 receiver#com.fisher.provider.RouteInfoProvider
-ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:36:9-44:20
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:36:9-44:20
 	android:name
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:36:19-71
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:36:19-71
 intent-filter#com.samsung.android.cocktail.v2.action.COCKTAIL_UPDATE
-ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:37:13-39:29
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:37:13-39:29
 action#com.samsung.android.cocktail.v2.action.COCKTAIL_UPDATE
-ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:38:17-96
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:38:17-96
 	android:name
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:38:25-94
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:38:25-94
 service#com.fisher.extra.RouteInfoAdapterService
-ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:46:9-48:71
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:46:9-48:71
 	android:permission
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:48:13-69
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:48:13-69
 	android:name
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:47:13-68
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:47:13-68
 meta-data#com.samsung.android.cocktail.mode
-ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:51:9-53:47
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:51:9-53:47
 	android:name
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:52:13-61
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:52:13-61
 	android:value
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:53:13-45
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:53:13-45
 activity#com.fisher.activity.ConfigureActivity
-ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:55:9-58:20
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:55:9-58:20
 	android:label
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:57:13-45
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:57:13-45
 	android:name
-		ADDED from D:\workspace_studio\EdgeScreen\app\src\main\AndroidManifest.xml:56:13-65
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:56:13-65
