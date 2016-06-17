@@ -33,11 +33,12 @@ public class RouteInfoAdapterFactory implements RemoteViewsService.RemoteViewsFa
     @Override
     public void onCreate() {
 //        loadLocalData();
-        loadRemoteData();
+//        loadRemoteData();
     }
 
     @Override
     public void onDataSetChanged() {
+        loadRemoteDataWithoutThread();
         Log.d(TAG,"load?  "+ routeInfoList.size());
         Log.d(TAG, "onDataSetChanged");
 //                notifyReady();
@@ -106,6 +107,11 @@ public class RouteInfoAdapterFactory implements RemoteViewsService.RemoteViewsFa
                 routeInfoList = data.getData();
             }
         }).start();
+    }
+
+    private void loadRemoteDataWithoutThread(){
+                TrackData data = NetUtil.loadRouteInfo("zhaijisong","3944490863");
+                routeInfoList = data.getData();
     }
 
     @Override
