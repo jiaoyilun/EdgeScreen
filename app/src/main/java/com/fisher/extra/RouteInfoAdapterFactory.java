@@ -41,7 +41,7 @@ public class RouteInfoAdapterFactory implements RemoteViewsService.RemoteViewsFa
     @Override
     public void onDataSetChanged() {
         Log.d(TAG, "onDataSetChanged");
-        notifyReady();
+//        notifyReady();
     }
 
     @Override

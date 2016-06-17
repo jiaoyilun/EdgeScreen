@@ -1,19 +1,11 @@
 [
     {
-        "merged": "D:\\workspace_studio\\ExpressTrack\\app\\build\\intermediates\\res\\merged\\debug\\layout\\track_plus_item.xml",
-        "source": "D:\\workspace_studio\\ExpressTrack\\app\\src\\main\\res\\layout\\track_plus_item.xml"
-    },
-    {
         "merged": "D:\\workspace_studio\\ExpressTrack\\app\\build\\intermediates\\res\\merged\\debug\\layout\\help_layout.xml",
         "source": "D:\\workspace_studio\\ExpressTrack\\app\\src\\main\\res\\layout\\help_layout.xml"
     },
     {
-        "merged": "D:\\workspace_studio\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\layout\\help_layout.xml",
-        "source": "D:\\workspace_studio\\EdgeScreen\\app\\src\\main\\res\\layout\\help_layout.xml"
-    },
-    {
-        "merged": "D:\\workspace_studio\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\layout\\track_feed.xml",
-        "source": "D:\\workspace_studio\\EdgeScreen\\app\\src\\main\\res\\layout\\track_feed.xml"
+        "merged": "D:\\workspace_studio\\ExpressTrack\\app\\build\\intermediates\\res\\merged\\debug\\layout\\track_plus_item.xml",
+        "source": "D:\\workspace_studio\\ExpressTrack\\app\\src\\main\\res\\layout\\track_plus_item.xml"
     },
     {
         "merged": "D:\\workspace_studio\\ExpressTrack\\app\\build\\intermediates\\res\\merged\\debug\\layout\\track_plus.xml",
@@ -24,19 +16,7 @@
         "source": "D:\\workspace_studio\\ExpressTrack\\app\\src\\main\\res\\layout\\activity_configure.xml"
     },
     {
-        "merged": "D:\\workspace_studio\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\layout\\track_plus_item.xml",
-        "source": "D:\\workspace_studio\\EdgeScreen\\app\\src\\main\\res\\layout\\track_plus_item.xml"
-    },
-    {
-        "merged": "D:\\workspace_studio\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\layout\\track_plus.xml",
-        "source": "D:\\workspace_studio\\EdgeScreen\\app\\src\\main\\res\\layout\\track_plus.xml"
-    },
-    {
         "merged": "D:\\workspace_studio\\ExpressTrack\\app\\build\\intermediates\\res\\merged\\debug\\layout\\track_feed.xml",
         "source": "D:\\workspace_studio\\ExpressTrack\\app\\src\\main\\res\\layout\\track_feed.xml"
-    },
-    {
-        "merged": "D:\\workspace_studio\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_configure.xml",
-        "source": "D:\\workspace_studio\\EdgeScreen\\app\\src\\main\\res\\layout\\activity_configure.xml"
     }
 ]

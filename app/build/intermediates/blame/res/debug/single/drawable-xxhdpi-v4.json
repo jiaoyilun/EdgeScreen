@@ -1,15 +1,11 @@
 [
     {
-        "merged": "D:\\workspace_studio\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\powered.png",
-        "source": "D:\\workspace_studio\\EdgeScreen\\app\\src\\main\\res\\drawable-xxhdpi\\powered.png"
-    },
-    {
         "merged": "D:\\workspace_studio\\ExpressTrack\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\feed_preview.png",
         "source": "D:\\workspace_studio\\ExpressTrack\\app\\src\\main\\res\\drawable-xxhdpi\\feed_preview.png"
     },
     {
-        "merged": "D:\\workspace_studio\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\feed_preview.png",
-        "source": "D:\\workspace_studio\\EdgeScreen\\app\\src\\main\\res\\drawable-xxhdpi\\feed_preview.png"
+        "merged": "D:\\workspace_studio\\ExpressTrack\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\powered.png",
+        "source": "D:\\workspace_studio\\ExpressTrack\\app\\src\\main\\res\\drawable-xxhdpi\\powered.png"
     },
     {
         "merged": "D:\\workspace_studio\\ExpressTrack\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\plus_preview.png",
@@ -20,23 +16,7 @@
         "source": "D:\\workspace_studio\\ExpressTrack\\app\\src\\main\\res\\drawable-xxhdpi\\refresh.png"
     },
     {
-        "merged": "D:\\workspace_studio\\ExpressTrack\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\powered.png",
-        "source": "D:\\workspace_studio\\ExpressTrack\\app\\src\\main\\res\\drawable-xxhdpi\\powered.png"
-    },
-    {
-        "merged": "D:\\workspace_studio\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\logo.png",
-        "source": "D:\\workspace_studio\\EdgeScreen\\app\\src\\main\\res\\drawable-xxhdpi\\logo.png"
-    },
-    {
         "merged": "D:\\workspace_studio\\ExpressTrack\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\logo.png",
         "source": "D:\\workspace_studio\\ExpressTrack\\app\\src\\main\\res\\drawable-xxhdpi\\logo.png"
-    },
-    {
-        "merged": "D:\\workspace_studio\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\plus_preview.png",
-        "source": "D:\\workspace_studio\\EdgeScreen\\app\\src\\main\\res\\drawable-xxhdpi\\plus_preview.png"
-    },
-    {
-        "merged": "D:\\workspace_studio\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\refresh.png",
-        "source": "D:\\workspace_studio\\EdgeScreen\\app\\src\\main\\res\\drawable-xxhdpi\\refresh.png"
     }
 ]

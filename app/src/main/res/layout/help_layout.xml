@@ -17,12 +17,12 @@
 
         <ImageView
             android:id="@+id/iv_refresh"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
             android:layout_marginLeft="2dp"
             android:contentDescription="@string/btn_refresh"
-            android:src="@drawable/refresh"
             android:scaleType="fitCenter"
+            android:src="@drawable/refresh"
             />
 
     </LinearLayout>

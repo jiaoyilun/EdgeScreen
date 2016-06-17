@@ -1,9 +1,5 @@
 [
     {
-        "merged": "D:\\workspace_studio\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\track_feed.xml",
-        "source": "D:\\workspace_studio\\EdgeScreen\\app\\src\\main\\res\\layout-land\\track_feed.xml"
-    },
-    {
         "merged": "D:\\workspace_studio\\ExpressTrack\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\track_feed.xml",
         "source": "D:\\workspace_studio\\ExpressTrack\\app\\src\\main\\res\\layout-land\\track_feed.xml"
     }
