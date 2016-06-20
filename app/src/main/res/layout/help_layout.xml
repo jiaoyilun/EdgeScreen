@@ -22,7 +22,7 @@
             android:layout_marginLeft="2dp"
             android:contentDescription="@string/btn_refresh"
             android:scaleType="fitCenter"
-            android:src="@drawable/refresh"
+            android:src="@drawable/ic_navigation_refresh"
             />
 
     </LinearLayout>
