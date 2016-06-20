@@ -8,8 +8,14 @@ import android.view.View;
 import android.view.View.OnClickListener;
 
 import com.fisher.R;
+import com.fisher.po.TrackData;
+import com.fisher.test.ApiManager;
 import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
+
+import rx.Subscriber;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.schedulers.Schedulers;
 
 public class ConfigureActivity extends AppCompatActivity {
     CoordinatorLayout rootLayout;
@@ -39,6 +45,24 @@ public class ConfigureActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    private void getData() {
+        String com = "";
+        String nu = "";
+        ApiManager.getTranckData(com, nu).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(new Subscriber<TrackData>() {
+            @Override
+            public void onCompleted() {
+            }
+
+            @Override
+            public void onError(Throwable e) {
+            }
+
+            @Override
+            public void onNext(TrackData trackData) {
+            }
+        });
     }
 
 }
