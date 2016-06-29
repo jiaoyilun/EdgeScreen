@@ -13,6 +13,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.fisher.activity.ConfigureActivity">
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
 
     <com.getbase.floatingactionbutton.FloatingActionsMenu
         android:id="@+id/multiple_actions"
@@ -27,7 +34,7 @@
         fab:fab_labelStyle="@style/menu_labels_style">
 
         <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/action_a"
+            android:id="@+id/action_fillIn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             fab:fab_icon="@android:drawable/ic_menu_edit"
@@ -35,7 +42,7 @@
             />
 
         <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/action_b"
+            android:id="@+id/action_cemera"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             fab:fab_icon="@android:drawable/ic_menu_camera"

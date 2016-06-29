@@ -33,4 +33,10 @@ public class RouteInfo {
     public String getContext() {
         return this.context;
     }
+
+    public RouteInfo(String location, String time, String context) {
+        this.location = location;
+        this.time = time;
+        this.context = context;
+    }
 }
