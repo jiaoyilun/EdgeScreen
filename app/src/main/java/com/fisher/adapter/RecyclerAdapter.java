@@ -54,7 +54,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.RecVH>
     @Override
     public boolean onLongClick(View v) {
         if (mOnItemLongClickListener != null) {
-            mOnItemLongClickListener.onItemLongClick(v, (String) v.getTag());
+            mOnItemLongClickListener.onItemLongClick(v, v.getTag().toString());
             return false;
         }
         return false;

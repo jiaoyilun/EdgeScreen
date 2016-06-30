@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.Toast;
 
 import com.fisher.R;
 import com.fisher.adapter.RecyclerAdapter;
@@ -24,6 +25,9 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String TAG = "MainActivity";
+
+
     private CoordinatorLayout rootLayout;
     private FloatingActionsMenu actionsMenu;
     private FloatingActionButton actionA;
@@ -60,16 +64,14 @@ public class MainActivity extends AppCompatActivity {
         adapter.setOnItemLongClickListener(new RecyclerAdapter.OnRecyclerViewItemLongClickListener() {
             @Override
             public void onItemLongClick(View view, String data) {
-                //                Toast.makeText(MainActivity.this, data, Toast.LENGTH_SHORT).show();
-
-                //                int index = Integer.parseInt(data);
-                //                adapter.notifyDataSetChanged();
+                int index = Integer.parseInt(data);
+                routeInfoList.remove(index);
+                adapter.notifyDataSetChanged();
 
                 Snackbar.make(rootLayout, data + "已删除！", Snackbar.LENGTH_SHORT).setAction("取消删除操作？", new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        //取消删除操作，恢复数据
-
+                        Toast.makeText(MainActivity.this, "取消删除操作，数据已恢复", Toast.LENGTH_SHORT).show();
                     }
                 }).show();
             }
