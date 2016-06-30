@@ -14,33 +14,41 @@ import com.fisher.R;
 import com.fisher.adapter.RecyclerAdapter;
 import com.fisher.po.RouteInfo;
 import com.fisher.po.TrackData;
-import com.fisher.test.ApiManager;
 import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import rx.Subscriber;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.schedulers.Schedulers;
 
 public class MainActivity extends AppCompatActivity implements RecyclerAdapter.OnItemClickListener, RecyclerAdapter.OnItemLongClickListener {
     private static final String TAG = "MainActivity";
 
+    @BindView(R.id.rootLayout)
+    CoordinatorLayout rootLayout;
 
-    private CoordinatorLayout rootLayout;
-    private FloatingActionsMenu actionsMenu;
-    private FloatingActionButton actionA;
+    @BindView(R.id.multiple_actions)
+    FloatingActionsMenu actionsMenu;
 
-    private RecyclerView recyclerView;
+    @BindView(R.id.action_fillIn)
+    FloatingActionButton actionA;
+
+    @BindView(R.id.recyclerView)
+    RecyclerView recyclerView;
+
     private RecyclerAdapter adapter;
     private List<TrackData> trackDataList = new ArrayList<TrackData>();
+
+    private Subscriber subscriber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
 
         initData();
         initViews();
@@ -49,11 +57,8 @@ public class MainActivity extends AppCompatActivity implements RecyclerAdapter.O
 
 
     private void initViews() {
-        actionsMenu = (FloatingActionsMenu) findViewById(R.id.multiple_actions);
-        rootLayout = (CoordinatorLayout) findViewById(R.id.rootLayout);
 
 
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         //设置并列2行的layoutManager
         //recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
 
@@ -68,15 +73,10 @@ public class MainActivity extends AppCompatActivity implements RecyclerAdapter.O
         recyclerView.setAdapter(adapter);
 
 
-        actionA = (FloatingActionButton)
-
-                findViewById(R.id.action_fillIn);
-
         actionA.setOnClickListener(new View.OnClickListener() {
                                        @Override
                                        public void onClick(View view) {
-
-
+                                           Toast.makeText(MainActivity.this, "手动输入", Toast.LENGTH_SHORT).show();
                                        }
                                    }
 
@@ -94,7 +94,8 @@ public class MainActivity extends AppCompatActivity implements RecyclerAdapter.O
                 info = new RouteInfo("南阳-" + j, "2015-01-01 10:22", "发往南阳光武站1" + j);
                 routeInfoList.add(info);
             }
-            data.setNu("201235412" + i);
+            data.setNu("3944490863");
+            data.setCom("zhaijisong");
             data.setData(routeInfoList);
             trackDataList.add(data);
         }
@@ -128,20 +129,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerAdapter.O
     }
 
     private void getData() {
-        String com = "";
-        String nu = "";
-        ApiManager.getTranckData(com, nu).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(new Subscriber<TrackData>() {
-            @Override
-            public void onCompleted() {
-            }
 
-            @Override
-            public void onError(Throwable e) {
-            }
 
-            @Override
-            public void onNext(TrackData trackData) {
-            }
-        });
     }
 }
