@@ -6,8 +6,10 @@ import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.widget.ListView;
 
 import com.fisher.R;
+import com.fisher.adapter.TimeLineAdapter;
 import com.fisher.po.TrackData;
 
 public class TrackActitity extends AppCompatActivity {
@@ -18,16 +20,21 @@ public class TrackActitity extends AppCompatActivity {
 
     private TrackData data;
 
+    private ListView listView;
+    private TimeLineAdapter timelineAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_track);
 
-        data = (TrackData) getIntent().getSerializableExtra("data");
-
+        initData();
         initView();
 
+    }
+
+    private void initData() {
+        data = (TrackData) getIntent().getSerializableExtra("data");
     }
 
     private void initView() {
@@ -42,17 +49,9 @@ public class TrackActitity extends AppCompatActivity {
         //通常有Tablayout的话就不用大标题了
         collapsingToolbarLayout.setTitleEnabled(false);
 
-        //        设置一些recyclerView的内容
-        //        List<String> strings = new ArrayList<>();
-        //        for (int i = 0; i < 20; i++) {
-        //            strings.add(i + "");
-        //        }
-        //        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
-        //        recyclerView.setLayoutManager(linearLayoutManager);
-        //        recyclerView.setHasFixedSize(true);
-        //        ListAdapter mAdapter = new ListAdapter(strings);
-        //        recyclerView.setAdapter(mAdapter);
-
+        listView = (ListView) this.findViewById(R.id.listview);
+        listView.setDividerHeight(0);
+        timelineAdapter = new TimeLineAdapter(this, data.getData());
+        listView.setAdapter(timelineAdapter);
     }
-
 }

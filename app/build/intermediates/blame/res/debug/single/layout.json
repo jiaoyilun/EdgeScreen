@@ -84,6 +84,10 @@
         "source": "D:\\workspace_studio\\ExpressTrack\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
     {
+        "merged": "D:\\workspace_studio\\ExpressTrack\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_timeline.xml",
+        "source": "D:\\workspace_studio\\ExpressTrack\\app\\src\\main\\res\\layout\\item_timeline.xml"
+    },
+    {
         "merged": "D:\\workspace_studio\\ExpressTrack\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
         "source": "D:\\workspace_studio\\ExpressTrack\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_bottom_sheet_dialog.xml"
     },
