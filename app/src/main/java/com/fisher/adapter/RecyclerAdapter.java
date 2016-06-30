@@ -49,7 +49,10 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.RecVH>
         holder.tv_context.setText(trackDataList.get(position).getContext());
         holder.tv_time.setText(trackDataList.get(position).getTime());
 
-        holder.itemView.setTag(position);
+        Object[] arr = new Object[2];
+        arr[0] = position;
+        arr[1] = trackDataList.get(position);
+        holder.itemView.setTag(arr);
     }
 
     @Override
@@ -60,7 +63,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.RecVH>
     @Override
     public boolean onLongClick(View v) {
         if (mOnItemLongClickListener != null) {
-            mOnItemLongClickListener.onItemLongClick(v, v.getTag().toString());
+            mOnItemLongClickListener.onItemLongClick(v, v.getTag());
             return false;
         }
         return false;
@@ -91,7 +94,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.RecVH>
     }
 
     public interface OnItemLongClickListener {
-        void onItemLongClick(View view, String data);
+        void onItemLongClick(View view, Object obj);
     }
 
     public interface OnItemClickListener {

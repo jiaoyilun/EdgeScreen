@@ -103,17 +103,22 @@ public class MainActivity extends AppCompatActivity implements RecyclerAdapter.O
     @Override
     public void onItemClick(View view, Object obj) {
         Intent intent = new Intent(MainActivity.this, TrackActitity.class);
+        if (obj != null) {
+            TrackData data = (TrackData) ((Object[]) obj)[1];
+            intent.putExtra("data", data);
+        }
         startActivity(intent);
     }
 
     @Override
-    public void onItemLongClick(View view, String data) {
+    public void onItemLongClick(View view, Object obj) {
         {
-            int index = Integer.parseInt(data);
+            Object[] data = (Object[]) obj;
+            int index = Integer.parseInt(data[0].toString());
             trackDataList.remove(index);
             adapter.notifyDataSetChanged();
 
-            Snackbar.make(rootLayout, data + "已删除！", Snackbar.LENGTH_SHORT).setAction("取消删除操作？", new View.OnClickListener() {
+            Snackbar.make(rootLayout, index + "已删除！", Snackbar.LENGTH_SHORT).setAction("取消删除操作？", new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Toast.makeText(MainActivity.this, "取消删除操作，数据已恢复", Toast.LENGTH_SHORT).show();

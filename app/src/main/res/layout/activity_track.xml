@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fitsSystemWindows="true">
 
     <android.support.design.widget.AppBarLayout
@@ -14,18 +14,57 @@
 
         <!--记得要设layout_scrollFlags-->
         <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapse_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="200dp"
             android:fitsSystemWindows="true"
             app:contentScrim="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            android:id="@+id/collapse_toolbar">
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
-            <ImageView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_fab_star"/>
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_fab_star"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_com"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"/>
+
+                    <TextView
+                        android:id="@+id/tv_nu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"/>
+
+                    <TextView
+                        android:id="@+id/tv_tel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"/>
+
+                    <TextView
+                        android:id="@+id/tv_url"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
 
             <!--这里的高度很关键，决定了收缩后顶部的高度-->
             <!--如果想收缩后还有其他控件就设大一点，否则wrap_content就好了-->
@@ -33,7 +72,7 @@
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="70dp"
                 android:gravity="top"
                 android:minHeight="?attr/actionBarSize"
                 app:layout_collapseMode="pin"

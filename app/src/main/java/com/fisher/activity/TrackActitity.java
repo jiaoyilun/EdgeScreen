@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
 import com.fisher.R;
+import com.fisher.po.TrackData;
 
 public class TrackActitity extends AppCompatActivity {
     private Toolbar toolbar;
@@ -15,11 +16,15 @@ public class TrackActitity extends AppCompatActivity {
     private CollapsingToolbarLayout collapsingToolbarLayout;
     private RecyclerView recyclerView;
 
+    private TrackData data;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_track);
+
+        data = (TrackData) getIntent().getSerializableExtra("data");
 
         initView();
 

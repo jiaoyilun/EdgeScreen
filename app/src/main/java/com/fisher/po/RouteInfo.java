@@ -1,9 +1,11 @@
 package com.fisher.po;
 
+import java.io.Serializable;
+
 /**
  * Created by Administrator on 2016/6/15/.
  */
-public class RouteInfo {
+public class RouteInfo implements Serializable {
     private String time;
 
     private String location;
