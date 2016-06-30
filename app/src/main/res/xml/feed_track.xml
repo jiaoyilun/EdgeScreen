@@ -2,11 +2,11 @@
 <cocktail-provider xmlns:android="http://schemas.android.com/apk/res/android"
                    category="feeds"
                    cocktailWidth="550"
-                   configure="com.fisher.activity.ConfigureActivity"
+                   configure="com.fisher.activity.MainActivity"
                    description="@string/desc_track"
                    icon="@drawable/logo"
                    label="@string/app_name"
-                   launchOnClick="com.fisher.activity.ConfigureActivity"
+                   launchOnClick="com.fisher.activity.MainActivity"
                    permitVisibilityChanged="false"
                    previewImage="@drawable/feed_preview"
                    updatePeriodMills="1800000">

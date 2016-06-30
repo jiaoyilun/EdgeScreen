@@ -52,7 +52,7 @@
             android:value="edge_single_plus"/>
 
         <activity
-            android:name=".activity.ConfigureActivity"
+            android:name=".activity.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme">
             <intent-filter>

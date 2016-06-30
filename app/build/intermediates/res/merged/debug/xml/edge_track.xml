@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <cocktail-provider xmlns:android="http://schemas.android.com/apk/res/android"
                    cocktailWidth="550"
-                   configure="com.fisher.activity.ConfigureActivity"
+                   configure="com.fisher.activity.MainActivity"
                    description="@string/desc_track"
                    label="@string/app_name"
                    previewImage="@drawable/plus_preview">

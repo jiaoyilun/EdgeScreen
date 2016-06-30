@@ -23,7 +23,7 @@ import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
-public class ConfigureActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
     private CoordinatorLayout rootLayout;
     private FloatingActionsMenu actionsMenu;
     private FloatingActionButton actionA;
@@ -34,7 +34,7 @@ public class ConfigureActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_configure);
+        setContentView(R.layout.activity_main);
 
         initData();
         initViews();
@@ -60,7 +60,7 @@ public class ConfigureActivity extends AppCompatActivity {
         adapter.setOnItemLongClickListener(new RecyclerAdapter.OnRecyclerViewItemLongClickListener() {
             @Override
             public void onItemLongClick(View view, String data) {
-                //                Toast.makeText(ConfigureActivity.this, data, Toast.LENGTH_SHORT).show();
+                //                Toast.makeText(MainActivity.this, data, Toast.LENGTH_SHORT).show();
 
                 //                int index = Integer.parseInt(data);
                 //                adapter.notifyDataSetChanged();
@@ -68,6 +68,7 @@ public class ConfigureActivity extends AppCompatActivity {
                 Snackbar.make(rootLayout, data + "已删除！", Snackbar.LENGTH_SHORT).setAction("取消删除操作？", new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        //取消删除操作，恢复数据
 
                     }
                 }).show();

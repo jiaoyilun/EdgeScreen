@@ -58,7 +58,7 @@ public class RouteInfoAdapterFactory implements RemoteViewsService.RemoteViewsFa
         Log.d(TAG,"load?  "+ routeInfoList.size());
         Log.d(TAG, "getViewAt....");
 
-        RemoteViews contentView = new RemoteViews(context.getPackageName(), R.layout.track_plus_item);
+        RemoteViews contentView = new RemoteViews(context.getPackageName(), R.layout.item_track_plus);
       /*   Bundle extras = new Bundle();
         Intent fillInIntent = new Intent();
        if ((position % 2) == 0) {

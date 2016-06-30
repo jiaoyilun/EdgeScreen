@@ -14,7 +14,7 @@ public class RouteInfoFeedProvider extends SlookCocktailProvider {
 
     @Override
     public void onUpdate(Context context, SlookCocktailManager cocktailManager, int[] cocktailIds) {
-        RemoteViews rv = new RemoteViews(context.getPackageName(), R.layout.track_feed);
+        RemoteViews rv = new RemoteViews(context.getPackageName(), R.layout.layout_track_feed);
 
         rv.setTextViewText(R.id.text, "客户已签收");
 

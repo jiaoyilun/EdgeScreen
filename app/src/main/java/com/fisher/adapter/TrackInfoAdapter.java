@@ -43,7 +43,7 @@ public class TrackInfoAdapter extends BaseAdapter {
         ViewHolder holder;
         if (convertView == null) {
             holder = new ViewHolder();
-            convertView = View.inflate(context, R.layout.track_plus_item, null);
+            convertView = View.inflate(context, R.layout.item_track_plus, null);
             holder.tv_time = (TextView) convertView.findViewById(R.id.tv_time);
             holder.tv_context = (TextView) convertView.findViewById(R.id.tv_context);
             convertView.setTag(holder);

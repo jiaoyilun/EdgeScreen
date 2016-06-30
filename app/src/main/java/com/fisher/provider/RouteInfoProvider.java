@@ -49,7 +49,7 @@ public class RouteInfoProvider extends SlookCocktailProvider {
         Intent intent = new Intent(context, RouteInfoAdapterService.class);
         intent.setData(Uri.parse(intent.toUri(Intent.URI_INTENT_SCHEME)));
 
-        RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.track_plus);
+        RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.layout_track_plus);
 
         views.setViewVisibility(R.id.tv_com, View.VISIBLE);
         views.setTextViewText(R.id.tv_com, "顺丰速递");
@@ -80,7 +80,7 @@ public class RouteInfoProvider extends SlookCocktailProvider {
 
     private RemoteViews setHelpAreaView(Context context) {
         String tx_update = String.format(context.getString(R.string.text_updated), getCurrentTime());
-        RemoteViews view_help = new RemoteViews(context.getPackageName(), R.layout.help_layout);
+        RemoteViews view_help = new RemoteViews(context.getPackageName(), R.layout.layout_help);
         view_help.setTextViewText(R.id.tv_update, tx_update);
 
         Intent logoIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.URL_POWERED));

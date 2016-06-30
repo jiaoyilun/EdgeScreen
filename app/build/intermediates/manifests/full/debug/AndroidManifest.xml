@@ -52,7 +52,7 @@
             android:value="edge_single_plus" />
 
         <activity
-            android:name="com.fisher.activity.ConfigureActivity"
+            android:name="com.fisher.activity.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme" >
             <intent-filter>
