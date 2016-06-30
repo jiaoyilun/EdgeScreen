@@ -5,18 +5,21 @@ import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.fisher.R;
 import com.fisher.adapter.TimeLineAdapter;
+import com.fisher.http.HttpMethods;
 import com.fisher.po.TrackData;
-import com.fisher.utils.HttpMethods;
+import com.fisher.subscribers.ProgressSubscriber;
+import com.fisher.subscribers.SubscriberOnNextListener;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import rx.Subscriber;
 
 public class TrackActitity extends AppCompatActivity {
+    private static final String TAG = "TrackActitity";
+
     @BindView(R.id.toolbar)
     Toolbar toolbar;
 
@@ -34,6 +37,9 @@ public class TrackActitity extends AppCompatActivity {
 
     private Subscriber subscriber;
 
+    private SubscriberOnNextListener getTrackOnNext;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,10 +50,21 @@ public class TrackActitity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         collapsingToolbarLayout.setTitleEnabled(false);
 
-        loadData();
+
+        getTrackOnNext = new SubscriberOnNextListener<TrackData>() {
+            @Override
+            public void onNext(TrackData trackData) {
+                timelineAdapter = new TimeLineAdapter(TrackActitity.this, trackData.getData());
+                listView.setAdapter(timelineAdapter);
+            }
+
+        };
+
+        //        loadData();
+        getData();
     }
 
-    private void loadData() {
+  /*  private void loadData() {
         subscriber = new Subscriber<TrackData>() {
             @Override
             public void onCompleted() {
@@ -70,5 +87,13 @@ public class TrackActitity extends AppCompatActivity {
 
         data = (TrackData) getIntent().getSerializableExtra("data");
         HttpMethods.getInstance().getTrackData(subscriber, data.getCom(), data.getNu());
+
+    }*/
+
+    private void getData() {
+        data = (TrackData) getIntent().getSerializableExtra("data");
+        HttpMethods.getInstance().getTrackData(new ProgressSubscriber(getTrackOnNext, TrackActitity.this), data.getCom(), data.getNu());
+
     }
+
 }

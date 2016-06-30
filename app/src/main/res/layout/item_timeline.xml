@@ -77,7 +77,8 @@
             android:paddingLeft="5dp"
             android:singleLine="false"
             android:text="测试数据"
-            android:textSize="12sp"/>
+            android:textSize="12sp"
+            android:autoText="false"/>
 
     </RelativeLayout>
 
