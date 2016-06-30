@@ -31,4 +31,9 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
+    <style name="AppTheme.WithoutActionBar.AppBarOverlay"
+           parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.WithoutActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
 </resources>

@@ -9,21 +9,26 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.fisher.R;
-import com.fisher.po.RouteInfo;
+import com.fisher.po.TrackData;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.RecVH> implements OnLongClickListener {
-    private List<RouteInfo> routeInfoList = new ArrayList<RouteInfo>();
-    private OnRecyclerViewItemLongClickListener mOnItemLongClickListener = null;
+public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.RecVH> implements OnLongClickListener, View.OnClickListener {
+    private List<TrackData> trackDataList = new ArrayList<TrackData>();
+    private OnItemLongClickListener mOnItemLongClickListener;
+    private OnItemClickListener mOnItemClickListener;
 
-    public RecyclerAdapter(List<RouteInfo> routeInfoList) {
-        this.routeInfoList = routeInfoList;
+    public RecyclerAdapter(List<TrackData> trackDataList) {
+        this.trackDataList = trackDataList;
     }
 
-    public void setOnItemLongClickListener(OnRecyclerViewItemLongClickListener listener) {
+    public void setOnItemLongClickListener(OnItemLongClickListener listener) {
         this.mOnItemLongClickListener = listener;
+    }
+
+    public void setmOnItemClickListener(OnItemClickListener mOnItemClickListener) {
+        this.mOnItemClickListener = mOnItemClickListener;
     }
 
     //创造ViewHolder
@@ -32,6 +37,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.RecVH>
         //把item的Layout转化成View传给ViewHolder
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_recycler, parent, false);
         view.setOnLongClickListener(this);
+        view.setOnClickListener(this);
         return new RecVH(view);
     }
 
@@ -39,16 +45,16 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.RecVH>
     @Override
     public void onBindViewHolder(RecVH holder, int position) {
         holder.iv_logo.setImageResource(R.drawable.ic_fab_star);
-        holder.tv_nu.setText(routeInfoList.get(position).getLocation());
-        holder.tv_context.setText(routeInfoList.get(position).getContext());
-        holder.tv_time.setText(routeInfoList.get(position).getTime());
+        holder.tv_nu.setText(trackDataList.get(position).getNu());
+        holder.tv_context.setText(trackDataList.get(position).getContext());
+        holder.tv_time.setText(trackDataList.get(position).getTime());
 
         holder.itemView.setTag(position);
     }
 
     @Override
     public int getItemCount() {
-        return routeInfoList.size();
+        return trackDataList.size();
     }
 
     @Override
@@ -59,6 +65,14 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.RecVH>
         }
         return false;
     }
+
+    @Override
+    public void onClick(View v) {
+        if (mOnItemClickListener != null) {
+            mOnItemClickListener.onItemClick(v, v.getTag());
+        }
+    }
+
 
     //ViewHolder绑定控件
     public class RecVH extends RecyclerView.ViewHolder {
@@ -76,8 +90,12 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.RecVH>
         }
     }
 
-    public interface OnRecyclerViewItemLongClickListener {
+    public interface OnItemLongClickListener {
         void onItemLongClick(View view, String data);
+    }
+
+    public interface OnItemClickListener {
+        void onItemClick(View view, Object obj);
     }
 
 }

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:2:1-66:12
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:2:1-72:12
 	xmlns:android
 		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:2:11-69
 	package
@@ -64,7 +64,7 @@ ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:15:
 	android:name
 		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:15:22-77
 application
-ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:17:5-64:19
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:17:5-70:19
 MERGED from [com.android.support:support-v4:23.3.0] D:\workspace_studio\ExpressTrack\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:cardview-v7:23.3.0] D:\workspace_studio\ExpressTrack\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.3.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:23.3.0] D:\workspace_studio\ExpressTrack\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\AndroidManifest.xml:22:5-20
@@ -125,7 +125,7 @@ ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:51:
 	android:value
 		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:53:13-45
 activity#com.fisher.activity.MainActivity
-ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:55:9-63:20
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:55:9-64:20
 	android:label
 		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:57:13-45
 	android:theme
@@ -133,12 +133,20 @@ ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:55:
 	android:name
 		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:56:13-50
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:59:13-62:29
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:59:13-63:29
 action#android.intent.action.MAIN
 ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:60:17-68
 	android:name
 		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:60:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:61:17-76
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:62:17-76
 	android:name
-		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:61:27-74
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:62:27-74
+activity#com.fisher.activity.TrackActitity
+ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:65:9-69:20
+	android:label
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:67:13-45
+	android:theme
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:68:13-61
+	android:name
+		ADDED from D:\workspace_studio\ExpressTrack\app\src\main\AndroidManifest.xml:66:13-51

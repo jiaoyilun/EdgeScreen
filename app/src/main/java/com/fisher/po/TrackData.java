@@ -4,11 +4,9 @@ import java.util.List;
 
 /**
  * Created by Administrator on 2016/6/15/.
- *
- *
+ * <p/>
+ * <p/>
  * {"nu":"3944490863","comcontact":"400-6789-000","companytype":"zhaijisong","com":"zhaijisong","condition":"F00","status":"1","codenumber":"3944490863","state":"3","data":[{"time":"2016-05-21 12:50:00","location":"","context":"客户已签收"},{"time":"2016-05-21 10:14:40","location":"","context":"离开 [河南_配送区部_南阳分拨站_白河南A加盟商] 派送中，递送员[薛甫]，电话[15738092568]"},{"time":"2016-05-21 08:33:57","location":"","context":"离开 [河南_配送区部_南阳分拨站] 发往 [河南_配送区部_南阳分拨站_白河南A加盟商]"},{"time":"2016-05-21 07:52:15","location":"","context":"到达 [河南_配送区部_南阳分拨站]"},{"time":"2016-05-21 01:01:07","location":"","context":"离开 [郑州运转中心] 发往 [河南_配送区部_南阳分拨站]"},{"time":"2016-05-20 13:11:46","location":"","context":"到达 [郑州运转中心]"},{"time":"2016-05-20 08:31:51","location":"","context":"到达 [山东_配送区部_潍坊营业所_河滩镇加盟商]"},{"time":"2016-05-20 03:13:54","location":"","context":"离开 [山东_潍坊运转中心] 发往 [郑州运转中心]"},{"time":"2016-05-19 20:15:20","location":"","context":"已取件，到达 [山东_潍坊运转中心]"}],"message":"ok","ischeck":"1","comurl":"http://www.zjs.com.cn"}
- *
- *
  */
 public class TrackData {
     private String nu;
@@ -34,6 +32,10 @@ public class TrackData {
     private String ischeck;
 
     private String comurl;
+
+    private String context;
+
+    private String time;
 
     public String getNu() {
         return nu;
@@ -129,5 +131,28 @@ public class TrackData {
 
     public void setComurl(String comurl) {
         this.comurl = comurl;
+    }
+
+
+    public String getContext() {
+        if (data != null && data.size() > 0) {
+            context = data.get(0).getContext();
+        }
+        return context;
+    }
+
+    public void setContext(String context) {
+        this.context = context;
+    }
+
+    public String getTime() {
+        if (data != null && data.size() > 0) {
+            time = data.get(0).getTime();
+        }
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
     }
 }
