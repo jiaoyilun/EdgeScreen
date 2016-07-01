@@ -15,7 +15,6 @@ import com.fisher.subscribers.SubscriberOnNextListener;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import rx.Subscriber;
 
 public class TrackActitity extends AppCompatActivity {
     private static final String TAG = "TrackActitity";
@@ -34,8 +33,6 @@ public class TrackActitity extends AppCompatActivity {
 
     private TimeLineAdapter timelineAdapter;
     private TrackData data;
-
-    private Subscriber subscriber;
 
     private SubscriberOnNextListener getTrackOnNext;
 

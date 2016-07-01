@@ -7,6 +7,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -14,6 +15,10 @@ import com.fisher.R;
 import com.fisher.adapter.RecyclerAdapter;
 import com.fisher.po.RouteInfo;
 import com.fisher.po.TrackData;
+import com.fisher.subscribers.ProgressSubscriber;
+import com.fisher.subscribers.SubscriberOnNextListener;
+import com.fisher.wx.Article;
+import com.fisher.wx.WxHttpMethods;
 import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
 
@@ -22,7 +27,6 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import rx.Subscriber;
 
 public class MainActivity extends AppCompatActivity implements RecyclerAdapter.OnItemClickListener, RecyclerAdapter.OnItemLongClickListener {
     private static final String TAG = "MainActivity";
@@ -42,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerAdapter.O
     private RecyclerAdapter adapter;
     private List<TrackData> trackDataList = new ArrayList<TrackData>();
 
-    private Subscriber subscriber;
+    private SubscriberOnNextListener getDataOnNext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +57,21 @@ public class MainActivity extends AppCompatActivity implements RecyclerAdapter.O
         initData();
         initViews();
 
+        test();
+
+    }
+
+
+    private void test(){
+        getDataOnNext = new SubscriberOnNextListener<List<Article>>() {
+            @Override
+            public void onNext(List<Article> articles) {
+                Log.d(TAG,articles.size()+"");
+                setTitle(articles.get(0).getTitle());
+                Toast.makeText(MainActivity.this,"complete:"+articles.get(0).getTitle(),Toast.LENGTH_SHORT);
+            }
+        };
+        WxHttpMethods.getInstance().getData(new ProgressSubscriber(getDataOnNext, MainActivity.this), 1);
     }
 
 
@@ -128,8 +147,4 @@ public class MainActivity extends AppCompatActivity implements RecyclerAdapter.O
         }
     }
 
-    private void getData() {
-
-
-    }
 }
