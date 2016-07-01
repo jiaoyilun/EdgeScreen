@@ -1,10 +1,10 @@
 [
     {
-        "merged": "D:\\workspace_studio\\ExpressTrack\\app\\build\\intermediates\\res\\merged\\debug\\xml\\edge_track.xml",
-        "source": "D:\\workspace_studio\\ExpressTrack\\app\\src\\main\\res\\xml\\edge_track.xml"
+        "merged": "D:\\workspace_android\\ExpressTrack\\app\\build\\intermediates\\res\\merged\\debug\\xml\\feed_track.xml",
+        "source": "D:\\workspace_android\\ExpressTrack\\app\\src\\main\\res\\xml\\feed_track.xml"
     },
     {
-        "merged": "D:\\workspace_studio\\ExpressTrack\\app\\build\\intermediates\\res\\merged\\debug\\xml\\feed_track.xml",
-        "source": "D:\\workspace_studio\\ExpressTrack\\app\\src\\main\\res\\xml\\feed_track.xml"
+        "merged": "D:\\workspace_android\\ExpressTrack\\app\\build\\intermediates\\res\\merged\\debug\\xml\\edge_track.xml",
+        "source": "D:\\workspace_android\\ExpressTrack\\app\\src\\main\\res\\xml\\edge_track.xml"
     }
 ]

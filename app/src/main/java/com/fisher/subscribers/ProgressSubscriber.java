@@ -58,6 +58,7 @@ public class ProgressSubscriber<T> extends Subscriber<T> implements ProgressCanc
 
     @Override
     public void onNext(T t) {
+        Log.d(TAG, toString());
         mSubscriberOnNextListener.onNext(t);
     }
 

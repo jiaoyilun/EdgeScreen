@@ -1,3 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="D:\workspace_android\ExpressTrack\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_52b917b0da18b8d93f302971d397b8055abad29b\classes.dex" />
+    </item>
+    <item
+        jar="D:\workspace_android\ExpressTrack\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_aa43e20f75b3fa304abea174883ae22dc53cd51b\classes.dex" />
+    </item>
+    <item
+        jar="D:\workspace_android\ExpressTrack\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_edf0ec41949014af9bc13c594484dc4064e24ba1\classes.dex" />
+    </item>
+    <item
+        jar="D:\workspace_android\ExpressTrack\app\build\intermediates\exploded-aar\com.jakewharton\butterknife\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d4ab8678882571a0a6f19c47a826ecbce5b4f42b">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.jakewharton-butterknife-8.1.0_a1d845919c29cea1e2642d3bd111d56895769c88\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.3.1\19047bdb6a4fc00a44124f64ca98e88fc204e7e3\okhttp-3.3.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="19047bdb6a4fc00a44124f64ca98e88fc204e7e3">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.3.1_497101b219db46198de08bff7b211332cae5f76d\classes.dex" />
+    </item>
+    <item
+        jar="D:\workspace_android\ExpressTrack\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_4312d5616af471ead2c721ff1959bd60b8b350c2\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.1.0\aa557d71ead91cbf26e0c316a0f593d168303309\converter-gson-2.1.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.1.0_7bd325c8fb1f9d154e563f3918e384c24db75f0d\classes.dex" />
+    </item>
+    <item
+        jar="D:\workspace_android\ExpressTrack\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1bc7dc6c84728e48714ceb764db18014d5cd8d53">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_0b3e8285986be992daead4ed16ba9378a3e2a034\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_7cd194c6f3f4f301c835750b93d55cdb37d12acf\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.8.0\5ea7af56cc7c567ed9856d99efb30740e9b17ff\okio-1.8.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.8.0_365bc7f13bc6e90185c2e01b0d9b6bc32924eb16\classes.dex" />
+    </item>
+    <item
+        jar="D:\workspace_android\ExpressTrack\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_23a4b56c79757d46c6cea7a97d254eeacb10a369\classes.dex" />
+    </item>
+    <item
+        jar="D:\workspace_android\ExpressTrack\app\build\intermediates\exploded-aar\com.getbase\floatingactionbutton\1.10.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f40cf334cdc8b098b74312e21c7741c6eefbeb0e">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.getbase-floatingactionbutton-1.10.1_4d8b3ce72277d5cb2c47610e2f6aaeb69eccd0a0\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\logging-interceptor\3.3.1\99ce730034c6f5aaed710d1e0e9df95e8714ed5f\logging-interceptor-3.3.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="99ce730034c6f5aaed710d1e0e9df95e8714ed5f">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\logging-interceptor-3.3.1_4df8da1753b121262bad14809e4aa9775521986b\classes.dex" />
+    </item>
+    <item
+        jar="D:\workspace_android\ExpressTrack\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_a4a8e19d98e44bc1f2c9267a1f831b3b3bcae21c\classes.dex" />
+    </item>
+    <item
+        jar="D:\workspace_android\ExpressTrack\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="82ce13fd19cdfde0e392f03c27edeba8d4333648">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.3.0_5c4fcc076fa2c6c1536f2c63dabf519eb701e5ab\classes.dex" />
+    </item>
+    <item
+        jar="D:\workspace_android\ExpressTrack\app\libs\sdk-v1.0.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e2ce3786b6e9519934c4a54aaaaf39525bf4486c">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\2\sdk-v1.0.0_e7f987aea8693cf9ce5a6a6b7132d70910bc70cc\classes.dex" />
+    </item>
+    <item
+        jar="D:\workspace_android\ExpressTrack\app\build\intermediates\exploded-aar\io.reactivex\rxandroid\1.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="5a2386ad9bfff580b206a7fe305cdccd00798159">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\io.reactivex-rxandroid-1.2.1_51e57274c19e28c91d519fdb698d50fd459aa2e8\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.1.0\2de7cd8b95b7021b1d597f049bcb422055119f2c\retrofit-2.1.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.1.0_a4db6faffd2519768cef3f6ac723de1f383a4598\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\adapter-rxjava\2.1.0\693eddc23e87ab13f9cf5001707ce8e7e1d1ff01\adapter-rxjava-2.1.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="693eddc23e87ab13f9cf5001707ce8e7e1d1ff01">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\adapter-rxjava-2.1.0_cc807aa8d6d57a933d84e23a520884dfaf2a40e5\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.1.0\d6854f42bfb4098d3d2358d93201307b9f1cc95d\butterknife-annotations-8.1.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d6854f42bfb4098d3d2358d93201307b9f1cc95d">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-annotations-8.1.0_32629701667bca9104e1d5926823b6e8ed95e520\classes.dex" />
+    </item>
+    <item
+        jar="D:\workspace_android\ExpressTrack\app\libs\look_v1.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a833cc4f712338585f175f0ac1236d12e07e9ee1">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\2\look_v1.3.0_bf771390189545deed089cbcd6e76bfcf5702c21\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.7_21e470d85737e43ea8268db3d1c9ae1ac4ed847c\classes.dex" />
+    </item>
+    <item
+        jar="D:\workspace_android\ExpressTrack\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_181798211e1e73af797e23a45fe13071d98832bd\classes.dex" />
+    </item>
+    <item
+        jar="D:\workspace_android\ExpressTrack\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="10896ba319f32b9a8f95aea9dffc7b4f542324e8">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7205fca20db796d8c1cc61c59fd9b1aa619fea66\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\gradle\caches\modules-2\files-2.1\io.reactivex\rxjava\1.1.6\2586312cd2b8a511e4c6236736f5a039fc0f2273\rxjava-1.1.6.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="2586312cd2b8a511e4c6236736f5a039fc0f2273">
+        <dex dex="D:\workspace_android\ExpressTrack\app\build\intermediates\transforms\dex\debug\folders\1000\10\rxjava-1.1.6_a8b7a12f56c8882272b4d82163e0e5fbd6dbd3a7\classes.dex" />
+    </item>
+
+</items>
