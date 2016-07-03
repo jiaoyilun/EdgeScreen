@@ -89,7 +89,7 @@ public class TrackActitity extends AppCompatActivity {
 
     private void getData() {
         data = (TrackData) getIntent().getSerializableExtra("data");
-        HttpMethods.getInstance().getTrackData(new ProgressSubscriber(getTrackOnNext, TrackActitity.this), data.getCom(), data.getNu());
+        HttpMethods.getInstance().getTrackData(new ProgressSubscriber(getTrackOnNext, TrackActitity.this), data.getId(), data.getOrder());
 
     }
 

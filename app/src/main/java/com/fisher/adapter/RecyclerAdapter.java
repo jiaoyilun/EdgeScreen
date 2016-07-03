@@ -45,7 +45,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.RecVH>
     @Override
     public void onBindViewHolder(RecVH holder, int position) {
         holder.iv_logo.setImageResource(R.drawable.ic_fab_star);
-        holder.tv_nu.setText(trackDataList.get(position).getNu());
+        holder.tv_nu.setText(trackDataList.get(position).getOrder());
         holder.tv_context.setText(trackDataList.get(position).getContext());
         holder.tv_time.setText(trackDataList.get(position).getTime());
 

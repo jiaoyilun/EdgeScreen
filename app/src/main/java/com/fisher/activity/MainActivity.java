@@ -68,7 +68,6 @@ public class MainActivity extends AppCompatActivity implements RecyclerAdapter.O
             public void onNext(List<Article> articles) {
                 Log.d(TAG,articles.size()+"");
                 setTitle(articles.get(0).getTitle());
-                Toast.makeText(MainActivity.this,"complete:"+articles.get(0).getTitle(),Toast.LENGTH_SHORT);
             }
         };
         WxHttpMethods.getInstance().getData(new ProgressSubscriber(getDataOnNext, MainActivity.this), 1);
@@ -110,11 +109,11 @@ public class MainActivity extends AppCompatActivity implements RecyclerAdapter.O
             routeInfoList = new ArrayList<RouteInfo>();
             data = new TrackData();
             for (int j = 0; j < 5; j++) {
-                info = new RouteInfo("南阳-" + j, "2015-01-01 10:22", "发往南阳光武站1" + j);
+                info = new RouteInfo( "2015-01-01 10:22", "发往南阳光武站1" + j);
                 routeInfoList.add(info);
             }
-            data.setNu("3944490863");
-            data.setCom("zhaijisong");
+            data.setOrder("3944490863");
+            data.setId("zjs");
             data.setData(routeInfoList);
             trackDataList.add(data);
         }

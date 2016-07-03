@@ -63,7 +63,7 @@ public class TimeLineAdapter extends BaseAdapter {
             viewHolder = (ViewHolder) convertView.getTag();
         }
 
-        String titleStr = routeInfoList.get(position).getContext();
+        String titleStr = routeInfoList.get(position).getContent();
         viewHolder.context.setText(titleStr);
         viewHolder.time.setText(routeInfoList.get(position).getTime());
         return convertView;

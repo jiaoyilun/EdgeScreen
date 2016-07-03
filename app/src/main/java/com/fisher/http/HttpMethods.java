@@ -1,7 +1,5 @@
 package com.fisher.http;
 
-import android.text.TextUtils;
-
 import com.fisher.po.TrackData;
 import com.fisher.utils.Constants;
 
@@ -53,8 +51,14 @@ public class HttpMethods {
     }
 
 
-    public void getTrackData(Subscriber<TrackData> subscriber, String com, String nu) {
+/*    public void getTrackData1(Subscriber<TrackData> subscriber, String com, String nu) {
         Observable observable = trackService.getTranckData(Constants.API_KD, "0", "1", "desc", com, nu).map(new HttpResultFunc<TrackData>());
+        toSubscribe(observable, subscriber);
+    }*/
+
+    public void getTrackData(Subscriber<TrackData> subscriber, String com, String nu) {
+        Observable observable = trackService.getTranckData("72430", "98a158351e834a85868be7faa1e1b19e", nu, com,"desc")
+                .map(new HttpResultFunc());
         toSubscribe(observable, subscriber);
     }
 
@@ -63,14 +67,14 @@ public class HttpMethods {
         o.subscribeOn(Schedulers.io()).unsubscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(s);
     }
 
-    private class HttpResultFunc<T> implements Func1<HttpResult<T>, T> {
+    private class HttpResultFunc implements Func1<TrackData, TrackData> {
+
         @Override
-        public T call(HttpResult<T> httpResult) {
-            if (!TextUtils.isEmpty(httpResult.getResultMessage()) && httpResult.getResultCode() != 0) {
-                throw new ApiException(httpResult.getResultCode());
+        public TrackData call(TrackData trackData) {
+            if (!trackData.getErrcode().equals("0000")) {
+                throw new ApiException(trackData.getErrcode());
             }
-            return httpResult.getData();
+            return trackData;
         }
     }
-
 }

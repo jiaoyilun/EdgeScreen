@@ -11,8 +11,11 @@ import rx.Observable;
  */
 public interface TrackService {
 
-    @GET("api")
+   /* @GET("api")
     Observable<HttpResult<TrackData>> getTranckData(@Query("id") String id, @Query("show") String show, @Query("muti") String muti, @Query("order") String order, @Query("com") String com, @Query("nu") String nu);
+*/
 
+   @GET("rest")
+   Observable<TrackData> getTranckData(@Query("uid") String uid, @Query("key") String key, @Query("order") String order, @Query("id") String id, @Query("ord") String ord);
 
 }
