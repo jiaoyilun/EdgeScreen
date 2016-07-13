@@ -76,7 +76,7 @@ public class RouteInfoAdapterFactory implements RemoteViewsService.RemoteViewsFa
         }*/
         try {
             RouteInfo routeInfo = routeInfoList.get(position);
-            contentView.setTextViewText(R.id.tv_context, routeInfo.getContext());
+            contentView.setTextViewText(R.id.tv_context, routeInfo.getContent());
             contentView.setTextViewText(R.id.tv_time, routeInfo.getTime());
         } catch (IndexOutOfBoundsException e) {
 

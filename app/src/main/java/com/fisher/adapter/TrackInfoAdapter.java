@@ -51,7 +51,7 @@ public class TrackInfoAdapter extends BaseAdapter {
             holder = (ViewHolder) convertView.getTag();
         }
         RouteInfo routeInfo = routeInfoList.get(position);
-        holder.tv_context.setText(routeInfo.getContext());
+        holder.tv_context.setText(routeInfo.getContent());
         holder.tv_time.setText(routeInfo.getTime());
 
         return convertView;

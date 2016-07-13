@@ -1,24 +1,24 @@
 package com.fisher.http;
 
 public class HttpResult<T> {
-    private int resultCode;
-    private String resultMessage;
+    private int errcode;
+    private String message;
     private T data;
 
-    public int getResultCode() {
-        return resultCode;
+    public int getErrcode() {
+        return errcode;
     }
 
-    public void setResultCode(int resultCode) {
-        this.resultCode = resultCode;
+    public void setErrcode(int errcode) {
+        this.errcode = errcode;
     }
 
-    public String getResultMessage() {
-        return resultMessage;
+    public String getMessage() {
+        return message;
     }
 
-    public void setResultMessage(String resultMessage) {
-        this.resultMessage = resultMessage;
+    public void setMessage(String message) {
+        this.message = message;
     }
 
     public T getData() {

@@ -15,7 +15,6 @@ import com.fisher.subscribers.SubscriberOnNextListener;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import rx.Subscriber;
 
 public class TrackActitity extends AppCompatActivity {
     private static final String TAG = "TrackActitity";
@@ -34,8 +33,6 @@ public class TrackActitity extends AppCompatActivity {
 
     private TimeLineAdapter timelineAdapter;
     private TrackData data;
-
-    private Subscriber subscriber;
 
     private SubscriberOnNextListener getTrackOnNext;
 
@@ -92,7 +89,7 @@ public class TrackActitity extends AppCompatActivity {
 
     private void getData() {
         data = (TrackData) getIntent().getSerializableExtra("data");
-        HttpMethods.getInstance().getTrackData(new ProgressSubscriber(getTrackOnNext, TrackActitity.this), data.getCom(), data.getNu());
+        HttpMethods.getInstance().getTrackData(new ProgressSubscriber(getTrackOnNext, TrackActitity.this), data.getId(), data.getOrder());
 
     }
 

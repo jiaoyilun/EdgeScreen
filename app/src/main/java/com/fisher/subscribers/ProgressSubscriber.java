@@ -54,10 +54,12 @@ public class ProgressSubscriber<T> extends Subscriber<T> implements ProgressCanc
         dismissProgressDialog();
         Toast.makeText(context, "error:" + e.getMessage(), Toast.LENGTH_SHORT).show();
         Log.e(TAG, e.getMessage());
+        e.printStackTrace();
     }
 
     @Override
     public void onNext(T t) {
+        Log.d(TAG, toString());
         mSubscriberOnNextListener.onNext(t);
     }
 
